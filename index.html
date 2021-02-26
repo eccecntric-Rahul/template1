@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lightslider plugin -->
+    <link type="text/css" rel="stylesheet" href="./plugin/css/lightslider.css" />                  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./plugin/js/lightslider.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e4b4b5e1c3.js" crossorigin="anonymous"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Dream-pulse</title>
+</head>
+<body>
+    
+    <header class="header" >
+        <button class="nav-btn" onclick="nav_toggle()" id="btn"><i class="fas fa-bars"></i></button>
+        <div class="nav-menu hide" id="nav-menu">
+        <div class="title-box-1"><div class="title-box-2"></div> Dream Pulse</div>
+        <nav>
+            <ul>
+               <a href="#intro"> <li id="li-1"></li>Intro</li></a>
+               <a href="#about"> <li id="li-2"></li>about</li></a>
+              <a href="#work">  <li id="li-3"></li>work</li></a>
+              <a href="#clients">  <li id="li-4"></li>clients</li></a>
+              <a href="#talk">  <li id="li-5"></li>let's talk</li></a>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section class="main"  id="intro">
+        <div class="box-1" id="intro"><h1>INTRODUCING DREAM PULSE</h1>
+        <p>This box alpha 30 percent. Left sidebar is a sticky element. 
+        Right side Contents are scrolling up and down.
+        This background has a parallax effect.</p>
+         <p>Dream Pulse is a Bootstrap 4.3.1 template designed for your websites. You can modify this layout as you like.</p>
+        </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-empty-col">
+                
+            </div>
+            <div class="about-container">
+            <div class="aboutus">
+                <i class="fas fa-balance-scale" id="scale"></i>
+                <h1>About Us</h1>
+                <p>When first section is scrolled up, BG image will be disappeared with a parallax effect. Donec ac tempor tellus, a eleifend ligula. Fusce vitae sem sed purus euismod condimentum.</p>
+                <p>Sed at orci non metus tristique suscipit vitae in nibh. Sed rutrum odio ac est hendrerit, at vestibulum felis condimentum.</p>
+            </div>
+            <div class="companyprofile">
+                <i class="far fa-building" id="building"></i>
+                <h1>Company Profile</h1>
+            <p>You can use this template for your commercial websites or for your clients. You are NOT allowed to re-post this template as a downloadable ZIP file on your template collection sites. It is illegal.</p>
+            <p>Suspendisse fermentum orci eget lorem euismod suscipit. Morbi condimentum odio metus, at finibus dolor sollicitudin quis. Curabitur eu congue erat.</p>
+        </div>
+        </div>
+        </section>
+        <section class="work" id="work">
+            <div class="work-empty-col">
+                
+            </div>
+            
+            <div class="our-work">
+                <div class="work-box-1">
+                <div class="work-box-2"></div>
+                    <h1>Our Work</h1>
+                    <ul id="lightSlider">
+                        <li><img src="./images/gallery/01.jpg" alt=""></li>
+                        <li><img src="./images/gallery/02.jpg" alt=""></li>
+                        <li><img src="./images/gallery/03.jpg" alt=""></li>
+                        <li><img src="./images/gallery/04.jpg" alt=""></li>
+                        <li><img src="./images/gallery/05.jpg" alt=""></li>
+                        <li><img src="./images/gallery/06.jpg" alt=""></li>
+                        <li><img src="./images/gallery/07.jpg" alt=""></li>
+                        <li><img src="./images/gallery/08.jpg" alt=""></li>
+                        <li><img src="./images/gallery/09.jpg" alt=""></li>
+                    </ul>
+                </div>
+        
+                
+            </div>
+        </section>
+        <section class="clients" id="clients">
+            <div class="clients-empty-box"></div>
+            <div class="clients-box-1">
+            <h1>Our Client</h1>
+            <p>Aenean est augue, iaculis ut arcu a, cursus tempus eros. Maecenas ut efficitur lectus, vel commodo nibh. Vivamus consequat massa non euismod facilisis. Morbi assumsan non libero a vehicula. Donec blandit suscipit magna sit amet elementum.</p>
+            <img src="./images/client-1.png" alt="">
+            <img src="./images/client-2.png" alt="">
+            <img src="./images/client-3.png" alt="">
+            <img src="./images/client-4.png" alt="">
+            <img src="./images/client-5.png" alt="">
+            <img src="./images/client-6.png" alt="">
+            <img src="./images/client-7.png" alt="">
+            <img src="./images/client-8.png" alt="">
+            </div>
+            
+        </section>
+        <section class="talk" id="talk">
+            <div class="talk-empty-box"></div>
+            <div class="talk-box">
+            <div class="talk-box-1">
+                <div class="talk-box-2"></div>
+                <h1>Talk To Us</h1>
+                <p>Talk to Us
+                    Sed aliquet, nibh ac hendrerit faucibus, tellus metus viverra tellus, vel volutpat purus orci ac ex.</p>                    
+                  <p>  120-240 Orci varius natoque penatibus,
+                    parturient montes, 10660
+                    nasvetur ridiculus mus</p>
+            </div>
+            </div>
+            <div class="form-box">
+                <form method="POST">
+                <input type="text" name="" id="" placeholder="Your Name"><br><br>
+                <input type="email" placeholder="Your Email"><br><br>
+                <textarea name="" id="" cols="5" rows="1" placeholder="Message"></textarea><br><br>
+                <button type="submit" id="btn" >Send</button>
+       
+            </form>
+            </div>
+        </section>
+        <script type="text/javascript">    
+        $(document).ready(function() {
+            $('#lightSlider').lightSlider({
+                autoWidth:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#lightSlider').removeClass('cS-hidden');
+                } 
+            });  
+          });
+        </script>
+        <script src="index.js"></script>
+            </body> 
+</html>

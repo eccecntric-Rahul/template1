@@ -1,0 +1,414 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+
+:root{
+    --heading-color: teal;
+    --content-color: grey;
+    --nav-text-color: #f3f3f3;
+    --nav-main-color: #505050;
+}
+
+body{
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+h1{
+    color: var(--heading-color);
+    font-size: 2.6rem;
+    font-weight: lighter;
+}
+
+p{
+    color: var(--content-color);
+    font-size: 2rem;
+}
+
+.nav-menu{
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 30vw;
+    color: var(--nav-text-color);
+    position: fixed;
+    float: left;
+    z-index: 4;
+}
+
+.title-box-1{
+    border: solid whitesmoke 0.1rem;
+    width: 20rem;
+    height: 15rem;
+    background: rgba(255, 255, 255, 0);
+    position: relative;
+    font-size: 4rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 10rem 10rem;
+    display: flex;
+    align-items: center;   
+
+}
+
+.title-box-2{
+    border: solid whitesmoke 0.1rem;
+    width: 20rem;
+    height: 15rem;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+}
+
+
+
+nav ul{
+    list-style: none;
+    color: var(--nav-text-color);
+    margin: 5rem 15rem 5rem 12rem;
+}
+
+nav ul a{
+    font-size: 2.5rem;
+    color: var(--nav-text-color);
+    text-decoration: none;
+    }
+nav ul a li{
+    margin: 0.3rem;
+    text-align: right;
+}
+
+.nav-btn{
+    display: none;
+    color: var(--nav-text-color);
+    background-color: var(--nav-main-color);
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+}
+
+
+.main{
+    background: url("./images/dream-pulse-header.jpg") center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+    
+}
+.box-1{
+    text-align: center;
+    border: solid whitesmoke 0.1rem;
+    width: 50rem;
+    height: 45rem;
+    margin: 5rem 10rem;
+    background: rgba(200, 200, 200, 0.75);
+}
+.main h1{
+    margin: 2rem 1rem;
+}
+
+.main p{
+    margin: 2rem 1rem;
+    color: var(--nav-main-color);
+}
+
+.about{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start ;
+    text-align: center;
+    /* width: 100vw; */
+}
+
+.about-empty-col{
+    background: var(--nav-main-color);
+    flex-basis: 30vw;
+    flex-shrink: 0;
+}
+
+
+.about-container{
+    flex-shrink: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.aboutus >h1 ,.aboutus>p , .companyprofile>h1,.companyprofile>p{
+    margin: 2rem 2rem;
+}
+.aboutus>p,.companyprofile>p{
+    text-align: justify;
+}
+/* ids */
+
+#scale,#building{
+    color: var(--heading-color);
+    font-size: 10rem;
+}
+
+
+/* work */
+
+.work{
+    display: flex;
+    width: 100vw;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.our-work{
+    flex-shrink:1;
+}
+
+.work-empty-col{
+    flex-basis: 30vw;
+    background: var(--nav-main-color);
+    flex-shrink: 0;
+}
+
+.work-box-1{
+    border: solid var(--nav-main-color) 0.1rem;
+    width: 50rem;
+    height: 50rem;
+    background: rgba(255, 255, 255, 0);
+    position: relative;
+    font-size: 4rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 10rem 10rem;
+
+       
+}
+.work-box-1 ul {
+    width: 20rem;
+    height: 20rem;
+}
+
+
+.work-box-2{
+    border: solid var(--nav-main-color) 0.1rem;
+    width: 50rem;
+    height: 50rem;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.work-box-1 > h1{
+    margin: 5rem;
+}
+
+/* clients box */
+.clients{
+    display: flex;
+    justify-content: flex-start;
+    height: 100vh;
+    /* width: 100vw; */
+}
+.clients-empty-box{
+    flex-basis: 30vw;
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: var(--nav-main-color);
+
+}
+.clients-box-1{
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;    
+    flex-wrap: wrap;
+    padding: 5rem;
+}
+.clients-box-1 img{
+    flex:0;
+    flex-basis: 50px;
+    height: 40px;
+    border: solid grey 0.1rem;
+    margin: 0 1rem;
+}
+
+
+
+/* talk */
+.talk{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+.talk-empty-box{
+    flex-basis: 30vw;
+    background: var(--nav-main-color);
+    flex-shrink: 0;
+}
+
+.talk-box{
+    flex: 1;
+}
+
+.talk-box-1{
+    border: solid var(--nav-main-color) 0.1rem;
+    height: 50rem;
+    background: rgba(255, 255, 255, 0);
+    position: relative;
+    font-size: 4rem;
+    padding: 1rem;
+    text-align: justify;
+    margin: 10rem 10rem;
+    
+}
+
+.talk-box-1 > h1{
+    margin: 4rem 5rem;
+    
+}
+.talk-box-1 > p{
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+.talk-box-2{
+    border: solid var(--nav-main-color) 0.1rem;
+    width: 50rem;
+    height: 50rem;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+}
+
+
+/* form */
+
+.form-box{
+    /* width: 100%; */
+    /* height: 100%; */
+    padding: 25rem 5rem 5rem 5rem;
+}
+
+
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: solid var(--nav-main-color) 0.1rem;
+    margin-bottom: 5rem;
+    }
+input:focus{
+    border: none;
+    border-bottom: solid blue 0.1rem;
+}
+
+textarea{
+    width: 100%;
+    border: none;
+    border-bottom: solid var(--nav-main-color) 0.1rem;
+}
+
+textarea:focus{
+    border:none;
+    border-bottom: solid blue 0.1rem;
+}
+.dot::after{
+    content: '' ;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    color: var(--nav-text-color);
+}
+
+/* media queries */
+
+@media(max-width:768px)
+{
+    html{
+        font-size: 50%;
+        overflow-x: hidden;
+    }
+    .hide{
+        display: none;
+    }
+    
+    .nav-btn{
+        display: block; 
+        position: absolute;
+        z-index: 5;
+
+    }
+    .nav-menu{
+        background: rgba(0,0,0,0.3);
+        width: 50vw;
+    }
+    .title-box-1{
+        width: 15rem;
+        margin:10rem 5rem;
+    }
+    .title-box-2{
+        width: 15rem;
+        
+    }
+    .about-empty-col,.work-empty-col,.clients-empty-box,.talk-empty-box{
+        display: none;
+    }
+    .main{
+        height: 100%;
+    
+    }
+    .about{
+        padding: 5rem 0 0 0;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .talk{
+        display: flex;
+        flex-direction: column;
+    }
+    .talk-box-2{
+        display: none;
+    }
+    .our-work{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .work-box-1{
+        /* height: 25rem; */
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .work-box-2{
+        /* height: 25rem; */
+        width: 25rem;
+    }
+    .clients-box-1{
+        flex-direction: column;
+    }
+    .clients-box-1 >img{
+        margin: 2rem;
+    }
+    .shift{
+        position: absolute;
+        top: 3rem;
+        left: 23.2rem;
+    }
+}
